@@ -1,0 +1,338 @@
+# Delete request responses:
+
+{ "message": "The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again." }
+
+{ "error": "service failure - try again later"}
+    {
+      "action": "delete",
+      "errors": [
+        {
+          "dependents": [
+            {
+              "id": "d7d33215-2c28-4875-b445-8a1a1f677fcc",
+              "type": "biospecimen"
+            }
+          ],
+          "keys": [],
+          "message": "Unable to delete entity because at least 1 other(s) directly or indirectly depend on it. You can only delete this entity by deleting its dependents prior to, or during the same transaction as this one.",
+          "type": "INVALID_LINK"
+        }
+      ],
+      "id": "5cbe0fc9-9bb1-492a-a7bc-1ac2c80532d7",
+      "related_cases": [],
+      "type": "case",
+      "unique_keys": [
+        {
+          "project_id": "internal-test",
+          "submitter_id": "cgm-case-01"
+        }
+      ],
+      "valid": false,
+      "warnings": []
+    },
+
+
+
+
+{
+  "code": 200,
+  "deleted_entity_count": 1,
+  "dependent_ids": "",
+  "entities": [
+    {
+      "action": "delete",
+      "errors": [],
+      "id": "5f98cf47-bad7-474a-a06a-34c06249db7e",
+      "related_cases": [],
+      "type": "case",
+      "unique_keys": [
+        {
+          "project_id": "internal-test",
+          "submitter_id": "case-160"
+        }
+      ],
+      "valid": true,
+      "warnings": []
+    }
+  ],
+  "entity_error_count": 0,
+  "message": "Successfully deleted 1 entities",
+  "success": true,
+  "transaction_id": 46859,
+  "transactional_error_count": 0,
+  "transactional_errors": []
+}
+
+
+Out[109]:
+{'code': 400,
+ 'deleted_entity_count': 0,
+ 'dependent_ids': '',
+ 'entities': [{'action': 'delete',
+   'errors': [{'id': '5f98cf47-bad7-474a-a06a-34c06249db7e',
+     'keys': ['id'],
+     'message': 'Entity not found.',
+     'type': 'NOT_FOUND'}],
+   'id': None,
+   'related_cases': [],
+   'type': None,
+   'unique_keys': [],
+   'valid': False,
+   'warnings': []}],
+ 'entity_error_count': 1,
+ 'message': 'Deletion transaction failed.',
+ 'success': False,
+ 'transaction_id': 46860,
+ 'transactional_error_count': 0,
+ 'transactional_errors': []}
+
+In [110]:
+
+
+Chunk 66 (chunk size: 30, submitted: 0 of 9594, now submitting rows 0 to 30):
+	Failed: 30 entities.
+{'code': 400, 'created_entity_count': 0, 'entities': [{'action': 'update', 'errors': [], 'id': 'ab76c449-534e-456b-a290-75f331fe8da4', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3404-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '52030386-d3c2-4a96-a84c-f4731b02cbb0', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3404-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'fd52ac27-b618-4f4c-8479-16181aaeed2c', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3400-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'e079c376-696a-4b89-802a-6eea76b2d6cd', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3400-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'dff9bcdd-d7ec-4790-90df-596c946c5e47', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3401-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'c4a3854d-beac-4879-86cc-2701e9eee79a', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3401-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '9629cfe5-adca-42ba-8932-21b32ffbd4a7', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3402-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '0d616fc3-1c43-4107-aebc-e523b9092d9c', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3402-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'aa3d557d-daca-478c-a978-12e17f80d8d6', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3403-Re-test-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'a85775fc-fa3b-4e5e-a5db-c48cc1ae462f', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3403-Re-test-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'a85775fc-fa3b-4e5e-a5db-c48cc1ae462f', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3403-Re-test-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'aa3d557d-daca-478c-a978-12e17f80d8d6', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3403-Re-test-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'e3f6adba-f969-4491-8ae7-5dc44f8ae056', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3405-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '92f0f16d-d105-4194-ba45-02c6abdceb44', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3405-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'fc322d35-d0d4-4821-be22-6fe5050496ac', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3406-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '53a7c755-348d-4cd5-a849-c13345a0fc71', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3406-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '26465c70-92ea-42f7-a87c-006d3c786125', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3100-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '6bbd8b5b-558b-4e79-9da4-5f6c1dc2f539', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3100-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '6054c318-97c0-400c-b1d3-69c62adb42f5', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3407-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '77d8d663-d040-4f43-9e7d-cf1b9ecf9596', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3407-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '7b6e1546-c1f8-4611-839b-e4ed3ce51875', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3050-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'bba5bd74-c9ed-4f8a-99cb-b368bc67a81f', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3050-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '56883f00-92c7-4122-a6b5-fcfbd789d428', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3103-Screening-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '24c80b2f-4323-486c-9016-1bd136f266db', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3103-Screening-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '1aad0e77-3ed8-4735-8290-f385a063e6bd', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3276-Visit-48-Month-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': '199d9069-fda2-43e4-b508-cff64e3bbf3c', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3276-Visit-48-Month-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'a5ad9dcc-22f4-4819-9f70-5fe8d3656ae4', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID60170-Visit-12-Month-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'e44a56b1-9047-4f45-9689-84005012a643', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID60170-Visit-12-Month-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'f6706453-cf0a-45ca-99e6-34a6cc02f599', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3269-Visit-48-Month-clinical_lab_test-Lymphocytes (Pct)'}], 'valid': True, 'warnings': []}, {'action': 'update', 'errors': [], 'id': 'a77d25f5-9715-4165-9300-47115a3e5f6e', 'related_cases': [], 'type': 'clinical_lab_test', 'unique_keys': [{'project_id': 'mjff-PPMI', 'submitter_id': 'PPMI-ID3269-Visit-48-Month-clinical_lab_test-Lymphocytes (x10^3/uL)'}], 'valid': True, 'warnings': []}], 'entity_error_count': 0, 'message': 'Transaction aborted due to 2 transactional error(s).', 'success': False, 'transaction_id': 73307, 'transactional_error_count': 2, 'transactional_errors': [{'message': "Entity is not unique, (('mjff-PPMI', 'PPMI-ID3403-Re-test-clinical_lab_test-Lymphocytes (x10^3/uL)'),)", 'type': 'NOT_UNIQUE'}, {'message': "Entity is not unique, (('mjff-PPMI', 'PPMI-ID3403-Re-test-clinical_lab_test-Lymphocytes (Pct)'),)", 'type': 'NOT_UNIQUE'}], 'updated_entity_count': 0}
+
+
+
+{"error": {"Request Timeout or Service Unavailable"}}
+{"error": {"Request Timeout"}}
+
+{'message': "Authentication Error: invalid issuer https://nci-crdc-demo.datacommons.io/user; expected: [u'https://data.bloodpac.org/user', 'http://fence-service/']"}
+
+{
+  "code": 400,
+  "created_entity_count": 0,
+  "entities": [],
+  "entity_error_count": 0,
+  "message": "Transaction aborted due to 1 transactional error(s).",
+  "success": false,
+  "transaction_id": 138149,
+  "transactional_error_count": 1,
+  "transactional_errors": [
+    "Nothing to submit"
+  ],
+  "updated_entity_count": 0
+}
+
+
+
+{
+  "code": 400,
+  "created_entity_count": 0,
+  "entities": [
+    {
+      "action": "update",
+      "errors": [
+        {
+          "keys": [],
+          "message": "Entity is owned by project internal-training, not DCF-demo",
+          "type": "INVALID_PERMISSIONS"
+        },
+        {
+          "keys": [
+            "project_id"
+          ],
+          "message": "Key 'project_id' is a system property and cannot be updated from 'DCF-demo' to 'internal-training'",
+          "type": "INVALID_PERMISSIONS"
+        }
+      ],
+...
+  "entity_error_count": 30,
+  "message": "Transaction aborted due to 30 invalid entities.",
+  "success": false,
+  "transaction_id": 138123,
+  "transactional_error_count": 0,
+  "transactional_errors": [],
+  "updated_entity_count": 0
+}
+
+
+# invalid entities:
+{
+  "code": 400,
+  "created_entity_count": 0,
+  "entities": [
+   {'action': 'update',
+    'errors': [{'keys': ['studies'],
+      'message': "No link destination found for studies, unique_keys='[{'project_id': 'internal-training', 'submitter_id': 'study-01999'}]'",
+      'type': 'INVALID_LINK'}],
+    'id': '38152044-ef97-4916-9c3b-a9745a4f3237',
+    'related_cases': [],
+    'type': 'subject',
+    'unique_keys': [{'project_id': 'internal-training',
+      'submitter_id': 'subject-64'}],
+    'valid': False,
+    'warnings': []},
+...
+
+
+
+
+
+## Error:
+
+
+
+In [17]: data = sub.submit_file(project_id,filename,chunk_size=4000,row_offset=0)
+
+Submitting mjff-PPMI_expression_result_biospecimen_RNA.txt with 27010 records.
+Chunk 1 (chunk size: 4000, submitted: 0 of 27010):
+	 Request Timeout: <html>
+<head><title>413 Request Entity Too Large</title></head>
+<body>
+<center><h1>413 Request Entity Too Large</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+Retrying Chunk with reduced chunk_size: 2000
+Chunk 2 (chunk size: 2000, submitted: 0 of 27010):
+---------------------------------------------------------------------------
+RemoteDisconnected                        Traceback (most recent call last)
+~/anaconda3/lib/python3.6/site-packages/urllib3/connectionpool.py in urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)
+    599                                                   body=body, headers=headers,
+--> 600                                                   chunked=chunked)
+    601
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/connectionpool.py in _make_request(self, conn, method, url, timeout, chunked, **httplib_request_kw)
+    383                     # otherwise it looks like a programming error was the cause.
+--> 384                     six.raise_from(e, None)
+    385         except (SocketTimeout, BaseSSLError, SocketError) as e:
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/packages/six.py in raise_from(value, from_value)
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/connectionpool.py in _make_request(self, conn, method, url, timeout, chunked, **httplib_request_kw)
+    379                 try:
+--> 380                     httplib_response = conn.getresponse()
+    381                 except Exception as e:
+
+~/anaconda3/lib/python3.6/http/client.py in getresponse(self)
+   1330             try:
+-> 1331                 response.begin()
+   1332             except ConnectionError:
+
+~/anaconda3/lib/python3.6/http/client.py in begin(self)
+    296         while True:
+--> 297             version, status, reason = self._read_status()
+    298             if status != CONTINUE:
+
+~/anaconda3/lib/python3.6/http/client.py in _read_status(self)
+    265             # sending a valid response.
+--> 266             raise RemoteDisconnected("Remote end closed connection without"
+    267                                      " response")
+
+RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+ProtocolError                             Traceback (most recent call last)
+~/anaconda3/lib/python3.6/site-packages/requests/adapters.py in send(self, request, stream, timeout, verify, cert, proxies)
+    448                     retries=self.max_retries,
+--> 449                     timeout=timeout
+    450                 )
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/connectionpool.py in urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)
+    637             retries = retries.increment(method, url, error=e, _pool=self,
+--> 638                                         _stacktrace=sys.exc_info()[2])
+    639             retries.sleep()
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/util/retry.py in increment(self, method, url, response, error, _pool, _stacktrace)
+    366             if read is False or not self._is_method_retryable(method):
+--> 367                 raise six.reraise(type(error), error, _stacktrace)
+    368             elif read is not None:
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/packages/six.py in reraise(tp, value, tb)
+    684         if value.__traceback__ is not tb:
+--> 685             raise value.with_traceback(tb)
+    686         raise value
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/connectionpool.py in urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)
+    599                                                   body=body, headers=headers,
+--> 600                                                   chunked=chunked)
+    601
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/connectionpool.py in _make_request(self, conn, method, url, timeout, chunked, **httplib_request_kw)
+    383                     # otherwise it looks like a programming error was the cause.
+--> 384                     six.raise_from(e, None)
+    385         except (SocketTimeout, BaseSSLError, SocketError) as e:
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/packages/six.py in raise_from(value, from_value)
+
+~/anaconda3/lib/python3.6/site-packages/urllib3/connectionpool.py in _make_request(self, conn, method, url, timeout, chunked, **httplib_request_kw)
+    379                 try:
+--> 380                     httplib_response = conn.getresponse()
+    381                 except Exception as e:
+
+~/anaconda3/lib/python3.6/http/client.py in getresponse(self)
+   1330             try:
+-> 1331                 response.begin()
+   1332             except ConnectionError:
+
+~/anaconda3/lib/python3.6/http/client.py in begin(self)
+    296         while True:
+--> 297             version, status, reason = self._read_status()
+    298             if status != CONTINUE:
+
+~/anaconda3/lib/python3.6/http/client.py in _read_status(self)
+    265             # sending a valid response.
+--> 266             raise RemoteDisconnected("Remote end closed connection without"
+    267                                      " response")
+
+ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+ConnectionError                           Traceback (most recent call last)
+<ipython-input-17-eae966c1c828> in <module>()
+----> 1 data = sub.submit_file(project_id,filename,chunk_size=4000,row_offset=0)
+
+<ipython-input-9-9a685b1a2533> in submit_file(self, project_id, filename, chunk_size, row_offset)
+    385                 auth=self._auth_provider,
+    386                 data=chunk.to_csv(sep="\t", index=False),
+--> 387                 headers=headers,
+    388             ).text
+    389             results["details"].append(response)
+
+~/anaconda3/lib/python3.6/site-packages/requests/api.py in put(url, data, **kwargs)
+    129     """
+    130
+--> 131     return request('put', url, data=data, **kwargs)
+    132
+    133
+
+~/anaconda3/lib/python3.6/site-packages/requests/api.py in request(method, url, **kwargs)
+     58     # cases, and look like a memory leak in others.
+     59     with sessions.Session() as session:
+---> 60         return session.request(method=method, url=url, **kwargs)
+     61
+     62
+
+~/anaconda3/lib/python3.6/site-packages/requests/sessions.py in request(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)
+    531         }
+    532         send_kwargs.update(settings)
+--> 533         resp = self.send(prep, **send_kwargs)
+    534
+    535         return resp
+
+~/anaconda3/lib/python3.6/site-packages/requests/sessions.py in send(self, request, **kwargs)
+    644
+    645         # Send the request
+--> 646         r = adapter.send(request, **kwargs)
+    647
+    648         # Total elapsed time of the request (approximately)
+
+~/anaconda3/lib/python3.6/site-packages/requests/adapters.py in send(self, request, stream, timeout, verify, cert, proxies)
+    496
+    497         except (ProtocolError, socket.error) as err:
+--> 498             raise ConnectionError(err, request=request)
+    499
+    500         except MaxRetryError as e:
+
+ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+In [18]:
+
+In [18]:
+
+In [18]:
