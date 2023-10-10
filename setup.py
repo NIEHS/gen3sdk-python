@@ -40,6 +40,12 @@ setup(
         "aiohttp",
         "backoff",
         "click",
+        "cdislogging",
+        "pandas",
+        "scipy",
+        "matplotlib",
+        "jsonschema",
+        "openpyxl",
     ],
     dependency_links=[
         "git+https://github.com/uc-cdis/indexclient.git@1.6.2#egg=indexclient"
